@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complete Booking – HotelFinder</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar site-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-building"></i> Hotel<span>Finder</span>
+      </a>
+      <div class="navbar-actions">
+        <button type="button" class="btn-nav-outline">Sign In</button>
+        <button type="button" class="btn-nav-solid">Register</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Main Content ===== -->
+  <main class="container page-main">
+
+    <!-- Breadcrumb -->
+    <nav class="app-breadcrumb">
+      <a href="index.html"><i class="bi bi-house-door-fill me-1"></i>Home</a>
+      <span class="sep"><i class="bi bi-chevron-right"></i></span>
+      <a href="searchResults.html">Search Results</a>
+      <span class="sep"><i class="bi bi-chevron-right"></i></span>
+      <a href="hotelDetails.html">Hotel Details</a>
+      <span class="sep"><i class="bi bi-chevron-right"></i></span>
+      <span class="current">Complete Booking</span>
+    </nav>
+
+    <!-- ===== Booking Success Card (initially hidden) ===== -->
+    <div id="bookingSuccessCard" class="booking-success-card d-none">
+      <div class="success-icon-wrap">
+        <i class="bi bi-check-circle-fill"></i>
+      </div>
+      <h2>Booking Confirmed!</h2>
+      <p class="success-subtitle">Thank you for booking with HotelFinder. Your reservation is complete.</p>
+      <div class="success-details" id="successDetails"></div>
+      <a href="index.html" class="btn-back-home">Return to Home</a>
+    </div>
+
+    <!-- Two-column layout: form + sidebar -->
+    <div class="payment-layout" id="paymentLayout">
+
+      <!-- ===== Left: Forms ===== -->
+      <div class="payment-main">
+
+        <!-- Guest Information -->
+        <div class="payment-card">
+          <h2>Guest Information</h2>
+          <form id="paymentForm" novalidate>
+            <div class="row g-3">
+
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="firstName">First Name <span class="text-danger">*</span></label>
+                <input type="text" id="firstName" class="form-control" placeholder="First Name" required />
+                <div class="invalid-feedback">Please enter your first name.</div>
+              </div>
+
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="lastName">Last Name <span class="text-danger">*</span></label>
+                <input type="text" id="lastName" class="form-control" placeholder="Last Name" required />
+                <div class="invalid-feedback">Please enter your last name.</div>
+              </div>
+
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="email">Email Address <span class="text-danger">*</span></label>
+                <input type="email" id="email" class="form-control" placeholder="you@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="phone">Phone Number <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text">+90</span>
+                  <input type="tel" id="phone" class="form-control" placeholder="555 555 55 55" required />
+                </div>
+                <div class="invalid-feedback" id="phoneFeedback">Please enter a valid phone number.</div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="checkClarification" required />
+                  <label class="form-check-label" for="checkClarification">
+                    I approve <a href="#">Clarification Text</a>. <span class="text-danger">*</span>
+                  </label>
+                  <div class="invalid-feedback">You must approve the Clarification Text.</div>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="checkConsent" required />
+                  <label class="form-check-label" for="checkConsent">
+                    I approve <a href="#">Consent Form</a>. <span class="text-danger">*</span>
+                  </label>
+                  <div class="invalid-feedback">You must approve the Consent Form.</div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+        <!-- Payment Options -->
+        <div class="payment-card">
+          <h2>Payment Options</h2>
+
+          <div class="payment-tab-row">
+            <button type="button" class="payment-tab active">
+              <i class="bi bi-credit-card me-1"></i>Credit / Debit Card
+            </button>
+          </div>
+
+          <div class="row g-3">
+
+            <div class="col-12">
+              <label class="form-label" for="cardHolder">Name on Card <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                <input type="text" id="cardHolder" class="form-control" placeholder="As shown on card" required />
+              </div>
+              <div class="invalid-feedback" id="cardHolderFeedback">Please enter the cardholder name.</div>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="cardNumber">Card Number <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-credit-card"></i></span>
+                <input type="text" id="cardNumber" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19" required />
+              </div>
+              <div class="invalid-feedback" id="cardNumberFeedback">Please enter a valid 16-digit card number.</div>
+            </div>
+
+            <div class="col-7">
+              <label class="form-label" for="expiryDate">Expiry Date <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-calendar3"></i></span>
+                <input type="text" id="expiryDate" class="form-control" placeholder="MM/YY" maxlength="5" required />
+              </div>
+              <div class="invalid-feedback" id="expiryFeedback">Use MM/YY format.</div>
+            </div>
+
+            <div class="col-5">
+              <label class="form-label" for="cvv">CVV <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-shield-lock"></i></span>
+                <input type="text" id="cvv" class="form-control" placeholder="123" maxlength="4" required />
+              </div>
+              <div class="invalid-feedback" id="cvvFeedback">3–4 digits.</div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkAgreement" required />
+                <label class="form-check-label" for="checkAgreement">
+                  I have read <a href="#">Preliminary Information Form</a> and
+                  <a href="#">Distance Sales Contract</a> and I agree. <span class="text-danger">*</span>
+                </label>
+                <div class="invalid-feedback">You must agree to the terms.</div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-2">
+              <button type="button" id="btnCompleteBooking" class="btn-complete-booking">
+                <i class="bi bi-check-circle-fill"></i>Complete the Booking
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- /payment-main -->
+
+      <!-- ===== Right: Booking Summary Sidebar ===== -->
+      <div class="payment-sidebar">
+        <div class="summary-card">
+          <h3>Your Booking Summary</h3>
+          <div id="summaryContent">
+            <p class="text-muted" style="font-size:0.85rem">Loading reservation…</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /payment-layout (#paymentLayout) -->
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="footer-brand"><i class="bi bi-building me-2"></i>Hotel<span>Finder</span></div>
+          <div class="footer-tagline">Find the perfect hotel for every journey.</div>
+        </div>
+        <div class="col-6 col-md-2 footer-col">
+          <h5>Explore</h5>
+          <ul><li><a href="#">Hotels</a></li><li><a href="#">Apartments</a></li><li><a href="#">Resorts</a></li></ul>
+        </div>
+        <div class="col-6 col-md-2 footer-col">
+          <h5>Destinations</h5>
+          <ul><li><a href="#">Antalya</a></li><li><a href="#">Istanbul</a></li><li><a href="#">Cappadocia</a></li></ul>
+        </div>
+        <div class="col-6 col-md-2 footer-col">
+          <h5>Support</h5>
+          <ul><li><a href="#">Help Center</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Cancellations</a></li></ul>
+        </div>
+        <div class="col-6 col-md-2 footer-col">
+          <h5>Company</h5>
+          <ul><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Privacy</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 HotelFinder. All rights reserved. CS391 Web Development Project.</div>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" id="scrollToTop" title="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/payment.js"></script>
+</body>
+</html>

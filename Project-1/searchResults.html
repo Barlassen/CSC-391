@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Results – HotelFinder</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar site-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-building"></i> Hotel<span>Finder</span>
+      </a>
+      <div class="navbar-actions">
+        <button type="button" class="btn-nav-outline">Sign In</button>
+        <button type="button" class="btn-nav-solid">Register</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Main Content ===== -->
+  <main class="container page-main">
+
+    <!-- Breadcrumb -->
+    <nav class="app-breadcrumb">
+      <a href="index.html"><i class="bi bi-house-door-fill me-1"></i>Home</a>
+      <span class="sep"><i class="bi bi-chevron-right"></i></span>
+      <span class="current">Search Results</span>
+    </nav>
+
+    <!-- Search Bar (same presentation as index.html) -->
+    <div class="page-search-wrapper">
+      <div class="search-bar-card">
+        <form id="searchForm" novalidate>
+          <div class="search-flex">
+
+            <div class="search-field" style="flex:2.2">
+              <label for="searchText"><i class="bi bi-search me-1"></i>Hotel / Destination</label>
+              <div class="autocomplete-wrapper">
+                <div class="input-with-icon">
+                  <i class="bi bi-geo-alt"></i>
+                  <input type="text" id="searchText" placeholder="City, hotel name, region…" autocomplete="off" />
+                </div>
+                <div class="autocomplete-dropdown" id="autocompleteDropdown"></div>
+              </div>
+            </div>
+
+            <div class="search-field">
+              <label for="checkIn"><i class="bi bi-calendar3 me-1"></i>Check-in</label>
+              <input type="date" id="checkIn" class="form-control" required />
+            </div>
+
+            <div class="search-field">
+              <label for="checkOut"><i class="bi bi-calendar3-range me-1"></i>Check-out</label>
+              <input type="date" id="checkOut" class="form-control" required />
+            </div>
+
+            <div class="search-field">
+              <label><i class="bi bi-people me-1"></i>Guests &amp; Rooms</label>
+              <div class="dropdown">
+                <button type="button" class="guest-room-btn dropdown-toggle"
+                        id="guestRoomToggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-people"></i>
+                  <span id="guestRoomText">2 Guests, 1 Room</span>
+                </button>
+                <div class="dropdown-menu guest-dropdown-menu" aria-labelledby="guestRoomToggle">
+                  <div class="counter-row">
+                    <span class="counter-label"><i class="bi bi-person me-1"></i>Guests</span>
+                    <div class="counter-controls">
+                      <button type="button" class="counter-btn" id="guestMinus">&#8722;</button>
+                      <span class="counter-value" id="guestCount">2</span>
+                      <button type="button" class="counter-btn" id="guestPlus">&#43;</button>
+                    </div>
+                  </div>
+                  <div class="counter-row">
+                    <span class="counter-label"><i class="bi bi-door-open me-1"></i>Rooms</span>
+                    <div class="counter-controls">
+                      <button type="button" class="counter-btn" id="roomMinus">&#8722;</button>
+                      <span class="counter-value" id="roomCount">1</span>
+                      <button type="button" class="counter-btn" id="roomPlus">&#43;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-action">
+              <button type="submit" class="btn-search">
+                <i class="bi bi-search"></i> Search
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar" id="filterBar">
+      <div class="filter-group">
+        <label>Price (₺/night):</label>
+        <input type="number" id="filterMinPrice" class="filter-price-input" placeholder="Min" min="0" />
+        <span style="color:#a0aec0">–</span>
+        <input type="number" id="filterMaxPrice" class="filter-price-input" placeholder="Max" min="0" />
+      </div>
+      <div class="filter-group">
+        <label>Stars:</label>
+        <button type="button" class="filter-star-btn" data-stars="3">★★★</button>
+        <button type="button" class="filter-star-btn" data-stars="4">★★★★</button>
+        <button type="button" class="filter-star-btn" data-stars="5">★★★★★</button>
+      </div>
+      <div class="filter-group">
+        <label>Sort:</label>
+        <select id="filterSort" class="filter-sort-select">
+          <option value="name">Name (A–Z)</option>
+          <option value="price-asc">Price ↑</option>
+          <option value="price-desc">Price ↓</option>
+          <option value="rating">Rating ↓</option>
+        </select>
+      </div>
+      <button type="button" class="filter-reset-btn" id="filterReset">Reset Filters</button>
+    </div>
+
+    <!-- Results Meta Bar -->
+    <div class="results-meta-bar" id="resultsMetaBar">
+      <h2 class="section-title mb-0" id="resultsTitle" style="font-size:1.15rem">
+        Search Results
+      </h2>
+      <span class="text-muted" style="font-size:0.85rem">Sorted by name (A–Z)</span>
+    </div>
+
+    <!-- Hotel Grid -->
+    <div id="resultsContainer" class="row g-3 row-cols-2 row-cols-sm-3 row-cols-lg-4">
+      <!-- Dynamically generated -->
+    </div>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="footer-brand"><i class="bi bi-building me-2"></i>Hotel<span>Finder</span></div>
+          <div class="footer-tagline">Find the perfect hotel for every journey.</div>
+        </div>
+        <div class="col-6 col-md-2 footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Apartments</a></li>
+            <li><a href="#">Resorts</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 footer-col">
+          <h5>Destinations</h5>
+          <ul>
+            <li><a href="#">Antalya</a></li>
+            <li><a href="#">Istanbul</a></li>
+            <li><a href="#">Cappadocia</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Cancellations</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 HotelFinder. All rights reserved. CS391 Web Development Project.</div>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" id="scrollToTop" title="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/searchResults.js"></script>
+</body>
+</html>
