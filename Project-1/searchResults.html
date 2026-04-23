@@ -13,7 +13,7 @@
   <!-- ===== Navbar ===== -->
   <nav class="navbar site-navbar">
     <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.html" onclick="sessionStorage.removeItem('searchData');">
         <i class="bi bi-building"></i> Hotel<span>Finder</span>
       </a>
       <div class="navbar-actions">
@@ -39,7 +39,7 @@
         <form id="searchForm" novalidate>
           <div class="search-flex">
 
-            <div class="search-field" style="flex:2.2">
+            <div class="search-field search-field-large">
               <label for="searchText"><i class="bi bi-search me-1"></i>Hotel / Destination</label>
               <div class="autocomplete-wrapper">
                 <div class="input-with-icon">
@@ -105,7 +105,7 @@
       <div class="filter-group">
         <label>Price (₺/night):</label>
         <input type="number" id="filterMinPrice" class="filter-price-input" placeholder="Min" min="0" />
-        <span style="color:#a0aec0">–</span>
+        <span class="search-separator">–</span>
         <input type="number" id="filterMaxPrice" class="filter-price-input" placeholder="Max" min="0" />
       </div>
       <div class="filter-group">
@@ -128,10 +128,10 @@
 
     <!-- Results Meta Bar -->
     <div class="results-meta-bar" id="resultsMetaBar">
-      <h2 class="section-title mb-0" id="resultsTitle" style="font-size:1.15rem">
+      <h2 class="section-title mb-0 results-title" id="resultsTitle">
         Search Results
       </h2>
-      <span class="text-muted" style="font-size:0.85rem">Sorted by name (A–Z)</span>
+      <span class="text-muted sort-text">Sorted by name (A–Z)</span>
     </div>
 
     <!-- Hotel Grid -->
@@ -191,7 +191,7 @@
   </button>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/searchResults.js"></script>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/searchResults.js?v=2"></script>
 </body>
 </html>

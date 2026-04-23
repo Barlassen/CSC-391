@@ -89,7 +89,7 @@ function buildPopularSlide(items) {
             <div class="popular-img-overlay"></div>
             <div class="popular-img-label">
               <span class="city-name">${pop.title}</span>
-              <span class="city-meta">From &#8378;${pop.avgPrice.toLocaleString()} / night</span>
+              <span class="city-meta">From &#8378;${pop.minPrice.toLocaleString()} / night</span>
             </div>
           </div>
         </div>

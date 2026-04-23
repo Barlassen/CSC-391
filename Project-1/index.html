@@ -13,7 +13,7 @@
   <!-- ===== Navbar ===== -->
   <nav class="navbar site-navbar">
     <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.html" onclick="sessionStorage.removeItem('searchData');">
         <i class="bi bi-building"></i> Hotel<span>Finder</span>
       </a>
       <div class="navbar-actions">
@@ -38,7 +38,7 @@
         <div class="search-flex">
 
           <!-- Hotel / Destination -->
-          <div class="search-field" style="flex:2.2">
+          <div class="search-field search-field-large">
             <label for="searchText"><i class="bi bi-search me-1"></i>Hotel / Destination</label>
             <div class="autocomplete-wrapper">
               <div class="input-with-icon">
@@ -104,7 +104,7 @@
   </div>
 
   <!-- ===== Main Content ===== -->
-  <main class="container page-main" style="padding-top:0">
+  <main class="container page-main page-main-no-pt">
 
     <!-- Deals and Discounts -->
     <section id="dealsSection" class="mb-5">
@@ -186,7 +186,7 @@
   </button>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/index.js?v=2"></script>
 </body>
 </html>

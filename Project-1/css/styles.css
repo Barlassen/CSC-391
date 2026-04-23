@@ -1109,3 +1109,16 @@ a { text-decoration: none; }
   .hero-content h1 { font-size: 1.7rem; }
   .hero-section { min-height: 300px; padding: 40px 12px 60px; }
 }
+
+/* ============================================================
+   REPLACED INLINE STYLES
+   ============================================================ */
+.search-field-large { flex: 2.2; }
+.search-separator { color: #a0aec0; }
+.results-title { font-size: 1.15rem; }
+.sort-text { font-size: 0.85rem; }
+.loading-text { font-size: 0.85rem; }
+.geo-icon { color: #003580; }
+.policy-item-full { grid-column: 1 / -1; }
+.check-icon { color: #38a169; }
+.page-main-no-pt { padding-top: 0; }

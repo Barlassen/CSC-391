@@ -13,7 +13,7 @@
   <!-- ===== Navbar ===== -->
   <nav class="navbar site-navbar">
     <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.html" onclick="sessionStorage.removeItem('searchData');">
         <i class="bi bi-building"></i> Hotel<span>Finder</span>
       </a>
       <div class="navbar-actions">
@@ -40,7 +40,7 @@
       <div class="hotel-name-block">
         <h1 id="hotelName">Loading…</h1>
         <div class="hotel-location-line">
-          <i class="bi bi-geo-alt-fill" style="color:#003580"></i>
+          <i class="bi bi-geo-alt-fill geo-icon"></i>
           <span id="hotelLocation"></span>
         </div>
         <div class="hotel-stars-line" id="hotelStars"></div>
@@ -101,7 +101,7 @@
               <dt><i class="bi bi-ban me-1"></i>Smoking</dt>
               <dd id="policySmoking">–</dd>
             </div>
-            <div class="policy-item" style="grid-column:1/-1">
+            <div class="policy-item policy-item-full">
               <dt><i class="bi bi-people-fill me-1"></i>Children</dt>
               <dd id="policyChildren">–</dd>
             </div>
@@ -164,7 +164,7 @@
   </button>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/hotelDetails.js"></script>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/hotelDetails.js?v=2"></script>
 </body>
 </html>

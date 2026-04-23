@@ -18,12 +18,11 @@ const hotelsArray = [
     highRate: 8900,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-eZgeylk2mBw?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_antalya_grand.png",
     images: [
-      "https://images.unsplash.com/photo-eZgeylk2mBw?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-MdshtB1VOj8?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-cxPsNriIaDM?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-vlUfaHmGUDk?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_antalya_grand.png",
+      "images/popular/popular_antalya.png",
+      "images/deals/antalya_resort.png"
     ],
     amenities: ["Free WiFi", "Swimming Pool", "Spa", "Restaurant", "Gym", "Parking", "Beach Access"],
     policies: {
@@ -39,7 +38,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "LCD TV", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-vlUfaHmGUDk?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_antalya_grand.png"
       },
       {
         type: "Deluxe Room",
@@ -48,7 +47,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "Sitting group", "TV", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-MdshtB1VOj8?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_antalya_grand.png"
       },
       {
         type: "Family Suite",
@@ -57,7 +56,7 @@ const hotelsArray = [
         guests: 4,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "Sitting group", "TV", "Mini Bar", "Wireless Internet", "Balcony"],
-        image: "https://images.unsplash.com/photo-cxPsNriIaDM?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_antalya_grand.png"
       }
     ]
   },
@@ -75,11 +74,11 @@ const hotelsArray = [
     highRate: 9500,
     checkIn: "After 14:00",
     checkOut: "Before 11:00",
-    image: "https://images.unsplash.com/photo-MdshtB1VOj8?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_lara_beach.png",
     images: [
-      "https://images.unsplash.com/photo-MdshtB1VOj8?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-eZgeylk2mBw?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-cxPsNriIaDM?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_lara_beach.png",
+      "images/popular/popular_antalya.png",
+      "images/deals/antalya_resort.png"
     ],
     amenities: ["All Inclusive", "Private Beach", "Swimming Pool", "Spa", "Restaurant", "Kids Club"],
     policies: {
@@ -95,7 +94,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["All Inclusive", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Balcony", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-eZgeylk2mBw?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_lara_beach.png"
       },
       {
         type: "Sea View Room",
@@ -104,7 +103,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["All Inclusive", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Sea View Balcony", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-cxPsNriIaDM?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_lara_beach.png"
       },
       {
         type: "Family Room",
@@ -113,7 +112,7 @@ const hotelsArray = [
         guests: 4,
         conditions: ["All Inclusive", "FREE Cancellation"],
         amenities: ["Air conditioning", "Sitting group", "TV", "Mini Bar", "Wireless Internet", "Two Bathrooms"],
-        image: "https://images.unsplash.com/photo-MdshtB1VOj8?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_lara_beach.png"
       }
     ]
   },
@@ -131,11 +130,11 @@ const hotelsArray = [
     highRate: 5200,
     checkIn: "After 15:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-6ypLalh88XI?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_side_paradise.png",
     images: [
-      "https://images.unsplash.com/photo-6ypLalh88XI?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-vlUfaHmGUDk?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-eZgeylk2mBw?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_side_paradise.png",
+      "images/popular/popular_antalya.png",
+      "images/deals/antalya_resort.png"
     ],
     amenities: ["Free WiFi", "Swimming Pool", "Restaurant", "Bar", "Parking", "Tour Desk"],
     policies: {
@@ -151,7 +150,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-vlUfaHmGUDk?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_side_paradise.png"
       },
       {
         type: "Superior Room",
@@ -160,7 +159,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-6ypLalh88XI?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_side_paradise.png"
       },
       {
         type: "Family Room",
@@ -169,7 +168,7 @@ const hotelsArray = [
         guests: 4,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Mini Bar", "Wireless Internet", "Sofa Bed"],
-        image: "https://images.unsplash.com/photo-cxPsNriIaDM?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_side_paradise.png"
       }
     ]
   },
@@ -187,12 +186,11 @@ const hotelsArray = [
     highRate: 10500,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-lqD-YIvQUPY?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_kemer_forest.png",
     images: [
-      "https://images.unsplash.com/photo-lqD-YIvQUPY?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-MdshtB1VOj8?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-eZgeylk2mBw?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-cxPsNriIaDM?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_kemer_forest.png",
+      "images/popular/popular_antalya.png",
+      "images/deals/antalya_resort.png"
     ],
     amenities: ["Free WiFi", "Private Beach", "Swimming Pool", "Spa", "Restaurant", "Gym", "Tennis Court"],
     policies: {
@@ -208,7 +206,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Forest View Balcony", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-lqD-YIvQUPY?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_kemer_forest.png"
       },
       {
         type: "Sea View Bungalow",
@@ -217,7 +215,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "Sitting group", "TV", "Mini Bar", "Private Terrace", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-cxPsNriIaDM?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_kemer_forest.png"
       },
       {
         type: "Family Bungalow",
@@ -226,7 +224,7 @@ const hotelsArray = [
         guests: 5,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "Full Kitchen", "TV", "Mini Bar", "Private Pool", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-MdshtB1VOj8?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_kemer_forest.png"
       }
     ]
   },
@@ -244,12 +242,11 @@ const hotelsArray = [
     highRate: 18000,
     checkIn: "After 15:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-UM_YUJUGK6g?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_bosphorus_palace.png",
     images: [
-      "https://images.unsplash.com/photo-UM_YUJUGK6g?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-qpvLP1-hrjc?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-lciwYx5XVOk?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-jRWwhFhYOKY?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_bosphorus_palace.png",
+      "images/popular/popular_istanbul.png",
+      "images/deals/istanbul_bosphorus.png"
     ],
     amenities: ["Free WiFi", "Bosphorus View", "Swimming Pool", "Spa", "Fine Dining", "Gym", "Concierge", "Valet Parking"],
     policies: {
@@ -265,7 +262,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "City View", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-qpvLP1-hrjc?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_bosphorus_palace.png"
       },
       {
         type: "Bosphorus View Suite",
@@ -274,7 +271,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "Sitting area", "TV", "Mini Bar", "Bosphorus Balcony", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-UM_YUJUGK6g?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_bosphorus_palace.png"
       },
       {
         type: "Royal Suite",
@@ -283,7 +280,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Butler Service"],
         amenities: ["Air conditioning", "Living room", "TV", "Full Bar", "Jacuzzi", "Panoramic Terrace", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-lciwYx5XVOk?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_bosphorus_palace.png"
       }
     ]
   },
@@ -301,11 +298,11 @@ const hotelsArray = [
     highRate: 6800,
     checkIn: "After 14:00",
     checkOut: "Before 11:00",
-    image: "https://images.unsplash.com/photo-NGJyOFKyGpw?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_grand_bazaar.png",
     images: [
-      "https://images.unsplash.com/photo-NGJyOFKyGpw?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-jRWwhFhYOKY?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-lciwYx5XVOk?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_grand_bazaar.png",
+      "images/popular/popular_istanbul.png",
+      "images/deals/istanbul_bosphorus.png"
     ],
     amenities: ["Free WiFi", "Rooftop Terrace", "Restaurant", "Tour Desk", "Airport Shuttle", "24h Reception"],
     policies: {
@@ -321,7 +318,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-jRWwhFhYOKY?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_grand_bazaar.png"
       },
       {
         type: "Deluxe Suite",
@@ -330,7 +327,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Mini Bar", "City View", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-NGJyOFKyGpw?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_grand_bazaar.png"
       },
       {
         type: "Terrace Suite",
@@ -339,7 +336,7 @@ const hotelsArray = [
         guests: 3,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Mini Bar", "Private Terrace", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-lciwYx5XVOk?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_grand_bazaar.png"
       }
     ]
   },
@@ -357,11 +354,11 @@ const hotelsArray = [
     highRate: 5500,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-jxmHxpcu5ss?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_taksim_square.png",
     images: [
-      "https://images.unsplash.com/photo-jxmHxpcu5ss?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-EpGf5ZpTBWw?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-UM_YUJUGK6g?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_taksim_square.png",
+      "images/popular/popular_istanbul.png",
+      "images/deals/istanbul_bosphorus.png"
     ],
     amenities: ["Free WiFi", "Restaurant", "Bar", "Gym", "24h Reception", "Business Center"],
     policies: {
@@ -377,7 +374,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "City View", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-jxmHxpcu5ss?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_taksim_square.png"
       },
       {
         type: "Superior Room",
@@ -386,7 +383,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Mini Bar", "City View", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-EpGf5ZpTBWw?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_taksim_square.png"
       },
       {
         type: "Junior Suite",
@@ -395,7 +392,7 @@ const hotelsArray = [
         guests: 3,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "Sitting area", "TV", "Mini Bar", "City Panorama", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-UM_YUJUGK6g?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_taksim_square.png"
       }
     ]
   },
@@ -413,11 +410,11 @@ const hotelsArray = [
     highRate: 7200,
     checkIn: "After 15:00",
     checkOut: "Before 11:00",
-    image: "https://images.unsplash.com/photo-MBluR5dSQsY?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_princes_islands.png",
     images: [
-      "https://images.unsplash.com/photo-MBluR5dSQsY?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-NFFe0Qcb3v4?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-UM_YUJUGK6g?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_princes_islands.png",
+      "images/popular/popular_istanbul.png",
+      "images/deals/istanbul_bosphorus.png"
     ],
     amenities: ["Free WiFi", "Swimming Pool", "Private Beach", "Restaurant", "Bicycle Rental", "Sea View"],
     policies: {
@@ -433,7 +430,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Garden View", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-NFFe0Qcb3v4?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_princes_islands.png"
       },
       {
         type: "Sea View Room",
@@ -442,7 +439,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Mini Bar", "Sea View Balcony", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-MBluR5dSQsY?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_princes_islands.png"
       },
       {
         type: "Family Villa",
@@ -451,7 +448,7 @@ const hotelsArray = [
         guests: 5,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "Full Kitchen", "TV", "Private Garden", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-UM_YUJUGK6g?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_princes_islands.png"
       }
     ]
   },
@@ -469,12 +466,11 @@ const hotelsArray = [
     highRate: 12000,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-ewaufEl_BD0?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_cave_goreme.png",
     images: [
-      "https://images.unsplash.com/photo-ewaufEl_BD0?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-SagXn7H6HFg?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-fA8z6L89_H0?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-82CRnSTU33w?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_cave_goreme.png",
+      "images/popular/popular_cappadocia.png",
+      "images/deals/cappadocia_balloons.png"
     ],
     amenities: ["Free WiFi", "Cave Rooms", "Terrace", "Restaurant", "Balloon Tour Desk", "Spa"],
     policies: {
@@ -490,7 +486,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Cave Architecture", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-fA8z6L89_H0?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_cave_goreme.png"
       },
       {
         type: "Cave Suite",
@@ -499,7 +495,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "Sitting area", "TV", "Jacuzzi", "Private Terrace", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-ewaufEl_BD0?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_cave_goreme.png"
       },
       {
         type: "Honeymoon Cave",
@@ -508,7 +504,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Welcome Champagne", "Late Checkout"],
         amenities: ["Air conditioning", "Sitting area", "TV", "Private Jacuzzi", "Valley View Terrace", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-SagXn7H6HFg?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_cave_goreme.png"
       }
     ]
   },
@@ -526,11 +522,11 @@ const hotelsArray = [
     highRate: 8800,
     checkIn: "After 14:00",
     checkOut: "Before 11:00",
-    image: "https://images.unsplash.com/photo-fA8z6L89_H0?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_fairy_chimney.png",
     images: [
-      "https://images.unsplash.com/photo-fA8z6L89_H0?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-KGwK6n7rxSg?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-SagXn7H6HFg?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_fairy_chimney.png",
+      "images/popular/popular_cappadocia.png",
+      "images/deals/cappadocia_balloons.png"
     ],
     amenities: ["Free WiFi", "Terrace", "Restaurant", "Valley Views", "Balloon Tour Arrangements", "Library"],
     policies: {
@@ -546,7 +542,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Valley View", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-KGwK6n7rxSg?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_fairy_chimney.png"
       },
       {
         type: "Rock Suite",
@@ -555,7 +551,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Jacuzzi", "Panoramic Terrace", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-fA8z6L89_H0?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_fairy_chimney.png"
       },
       {
         type: "Family Stone House",
@@ -564,7 +560,7 @@ const hotelsArray = [
         guests: 4,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "Living room", "TV", "Kitchen", "Private Garden", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-82CRnSTU33w?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_fairy_chimney.png"
       }
     ]
   },
@@ -582,12 +578,11 @@ const hotelsArray = [
     highRate: 16000,
     checkIn: "After 15:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-SagXn7H6HFg?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_uchisar_castle.png",
     images: [
-      "https://images.unsplash.com/photo-SagXn7H6HFg?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-ewaufEl_BD0?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-KGwK6n7rxSg?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-82CRnSTU33w?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_uchisar_castle.png",
+      "images/popular/popular_cappadocia.png",
+      "images/deals/cappadocia_balloons.png"
     ],
     amenities: ["Free WiFi", "Infinity Pool", "Spa", "Fine Dining", "Terrace", "Helicopter Tours", "Concierge"],
     policies: {
@@ -603,7 +598,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Valley View", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-82CRnSTU33w?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_uchisar_castle.png"
       },
       {
         type: "Cappadocia Suite",
@@ -612,7 +607,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "Sitting room", "TV", "Mini Bar", "Private Jacuzzi", "Panoramic View", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-SagXn7H6HFg?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_uchisar_castle.png"
       },
       {
         type: "Presidential Suite",
@@ -621,7 +616,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Butler Service", "FREE Cancellation"],
         amenities: ["Air conditioning", "Full living room", "TV", "Full Bar", "Private Pool", "360° Terrace", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-ewaufEl_BD0?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_uchisar_castle.png"
       }
     ]
   },
@@ -639,11 +634,11 @@ const hotelsArray = [
     highRate: 14000,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-8D9_vzCqDlY?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_bodrum_bay.png",
     images: [
-      "https://images.unsplash.com/photo-8D9_vzCqDlY?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-odfWue8fwuE?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-6gVzRavVIW0?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_bodrum_bay.png",
+      "images/popular/popular_bodrum.png",
+      "images/deals/aegean_resort.png"
     ],
     amenities: ["Free WiFi", "Private Beach", "Swimming Pool", "Spa", "Marina", "Water Sports", "Restaurant"],
     policies: {
@@ -659,7 +654,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Garden View", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-8D9_vzCqDlY?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_bodrum_bay.png"
       },
       {
         type: "Sea View Room",
@@ -668,7 +663,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Sea View Balcony", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-6gVzRavVIW0?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_bodrum_bay.png"
       },
       {
         type: "Villa with Private Pool",
@@ -677,7 +672,7 @@ const hotelsArray = [
         guests: 4,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "Living room", "TV", "Full Bar", "Private Pool", "Sea View Garden", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-odfWue8fwuE?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_bodrum_bay.png"
       }
     ]
   },
@@ -695,11 +690,11 @@ const hotelsArray = [
     highRate: 22000,
     checkIn: "After 15:00",
     checkOut: "Before 11:00",
-    image: "https://images.unsplash.com/photo-6gVzRavVIW0?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_blue_voyage.png",
     images: [
-      "https://images.unsplash.com/photo-6gVzRavVIW0?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-odfWue8fwuE?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-qmemqNn_3xM?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_blue_voyage.png",
+      "images/popular/popular_bodrum.png",
+      "images/deals/aegean_resort.png"
     ],
     amenities: ["Free WiFi", "Private Pier", "Swimming Pool", "Spa", "Fine Dining", "Yacht Charter", "Concierge"],
     policies: {
@@ -715,7 +710,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Sea View Balcony", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-odfWue8fwuE?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_blue_voyage.png"
       },
       {
         type: "Junior Suite",
@@ -724,7 +719,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Butler Service"],
         amenities: ["Air conditioning", "Sitting area", "TV", "Full Bar", "Private Terrace", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-6gVzRavVIW0?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_blue_voyage.png"
       },
       {
         type: "Grand Sea Suite",
@@ -733,7 +728,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["All Inclusive", "Butler Service", "Yacht Transfer"],
         amenities: ["Air conditioning", "Full living room", "TV", "Full Bar", "Private Pool", "Pier Access", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-qmemqNn_3xM?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_blue_voyage.png"
       }
     ]
   },
@@ -751,11 +746,11 @@ const hotelsArray = [
     highRate: 3500,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-qmemqNn_3xM?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_gumbet_beach.png",
     images: [
-      "https://images.unsplash.com/photo-qmemqNn_3xM?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-8D9_vzCqDlY?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-6gVzRavVIW0?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_gumbet_beach.png",
+      "images/popular/popular_bodrum.png",
+      "images/deals/aegean_resort.png"
     ],
     amenities: ["Free WiFi", "Beach Access", "Swimming Pool", "Restaurant", "Bar", "Tour Desk"],
     policies: {
@@ -771,7 +766,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Room Only", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-8D9_vzCqDlY?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_gumbet_beach.png"
       },
       {
         type: "Standard Room",
@@ -780,7 +775,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Pool View", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-qmemqNn_3xM?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_gumbet_beach.png"
       },
       {
         type: "Family Room",
@@ -789,7 +784,7 @@ const hotelsArray = [
         guests: 4,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Pool View", "Sofa Bed", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-odfWue8fwuE?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_gumbet_beach.png"
       }
     ]
   },
@@ -807,11 +802,11 @@ const hotelsArray = [
     highRate: 11000,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-8GskgAIoenI?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_aegean_pearl.png",
     images: [
-      "https://images.unsplash.com/photo-8GskgAIoenI?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-6gVzRavVIW0?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-cxPsNriIaDM?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_aegean_pearl.png",
+      "images/popular/popular_izmir.png",
+      "images/deals/aegean_resort.png"
     ],
     amenities: ["Free WiFi", "Sea View", "Swimming Pool", "Spa", "Fine Dining", "Gym", "Meeting Rooms"],
     policies: {
@@ -827,7 +822,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "City View", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-8GskgAIoenI?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_aegean_pearl.png"
       },
       {
         type: "Sea View Room",
@@ -836,7 +831,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Sea View Balcony", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-6gVzRavVIW0?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_aegean_pearl.png"
       },
       {
         type: "Penthouse Suite",
@@ -845,7 +840,7 @@ const hotelsArray = [
         guests: 3,
         conditions: ["Breakfast included", "FREE Cancellation", "Airport Transfer"],
         amenities: ["Air conditioning", "Living room", "TV", "Full Bar", "Panoramic Terrace", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-cxPsNriIaDM?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_aegean_pearl.png"
       }
     ]
   },
@@ -863,11 +858,11 @@ const hotelsArray = [
     highRate: 6200,
     checkIn: "After 14:00",
     checkOut: "Before 11:00",
-    image: "https://images.unsplash.com/photo-jRWwhFhYOKY?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_kordon_boutique.png",
     images: [
-      "https://images.unsplash.com/photo-jRWwhFhYOKY?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-8GskgAIoenI?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-6gVzRavVIW0?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_kordon_boutique.png",
+      "images/popular/popular_izmir.png",
+      "images/deals/aegean_resort.png"
     ],
     amenities: ["Free WiFi", "Rooftop Terrace", "Restaurant", "Bar", "Airport Shuttle", "Bicycle Rental"],
     policies: {
@@ -883,7 +878,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-jRWwhFhYOKY?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_kordon_boutique.png"
       },
       {
         type: "Superior Room",
@@ -892,7 +887,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Sea View", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-8GskgAIoenI?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_kordon_boutique.png"
       },
       {
         type: "Penthouse Room",
@@ -901,7 +896,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Panoramic Rooftop Terrace", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-6gVzRavVIW0?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_kordon_boutique.png"
       }
     ]
   },
@@ -919,11 +914,11 @@ const hotelsArray = [
     highRate: 7000,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-vSsjAkjMDj4?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_ankara_garden.png",
     images: [
-      "https://images.unsplash.com/photo-vSsjAkjMDj4?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-YwcMlX9XnM4?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-qpvLP1-hrjc?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_ankara_garden.png",
+      "images/popular/popular_istanbul.png",
+      "images/deals/istanbul_bosphorus.png"
     ],
     amenities: ["Free WiFi", "Swimming Pool", "Spa", "Restaurant", "Gym", "Business Center", "Parking"],
     policies: {
@@ -939,7 +934,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "City View", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-YwcMlX9XnM4?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_ankara_garden.png"
       },
       {
         type: "Executive Room",
@@ -948,7 +943,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Club Lounge Access", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "City View", "Mini Bar", "Wireless Internet", "Work Desk"],
-        image: "https://images.unsplash.com/photo-vSsjAkjMDj4?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_ankara_garden.png"
       },
       {
         type: "Diplomatic Suite",
@@ -957,7 +952,7 @@ const hotelsArray = [
         guests: 3,
         conditions: ["Breakfast included", "Butler Service"],
         amenities: ["Air conditioning", "Living room", "TV", "Full Bar", "City Panorama", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-qpvLP1-hrjc?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_ankara_garden.png"
       }
     ]
   },
@@ -975,11 +970,11 @@ const hotelsArray = [
     highRate: 4800,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-YwcMlX9XnM4?w=600&h=400&fit=crop&q=80",
+    image: "images/hotels/hotel_ankara_garden.png",
     images: [
-      "https://images.unsplash.com/photo-YwcMlX9XnM4?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-vSsjAkjMDj4?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-EpGf5ZpTBWw?w=900&h=500&fit=crop&q=80"
+      "images/hotels/hotel_ankara_garden.png",
+      "images/popular/popular_istanbul.png",
+      "images/deals/istanbul_bosphorus.png"
     ],
     amenities: ["Free WiFi", "Restaurant", "Bar", "Gym", "Meeting Rooms", "24h Reception"],
     policies: {
@@ -995,7 +990,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "City View", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-vSsjAkjMDj4?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_ankara_garden.png"
       },
       {
         type: "Business Room",
@@ -1004,7 +999,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "City View", "Mini Bar", "Work Desk", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-YwcMlX9XnM4?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_ankara_garden.png"
       },
       {
         type: "Junior Suite",
@@ -1013,7 +1008,7 @@ const hotelsArray = [
         guests: 3,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "Sitting area", "TV", "Mini Bar", "City Panorama", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-EpGf5ZpTBWw?w=300&h=200&fit=crop&q=80"
+        image: "images/hotels/hotel_ankara_garden.png"
       }
     ]
   },
@@ -1031,11 +1026,11 @@ const hotelsArray = [
     highRate: 6500,
     checkIn: "After 14:00",
     checkOut: "Before 12:00",
-    image: "https://images.unsplash.com/photo-uYThZZmJFik?w=600&h=400&fit=crop&q=80",
+    image: "images/popular/popular_pamukkale.png",
     images: [
-      "https://images.unsplash.com/photo-uYThZZmJFik?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-p6p5-uR5N5U?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-r86NLYwkhBM?w=900&h=500&fit=crop&q=80"
+      "images/popular/popular_pamukkale.png",
+      "images/popular/popular_pamukkale.png",
+      "images/deals/thermal_spa.png"
     ],
     amenities: ["Free WiFi", "Thermal Pool", "Spa", "Restaurant", "Terrace", "Tour Desk"],
     policies: {
@@ -1051,7 +1046,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-r86NLYwkhBM?w=300&h=200&fit=crop&q=80"
+        image: "images/popular/popular_pamukkale.png"
       },
       {
         type: "Terrace View Room",
@@ -1060,7 +1055,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later"],
         amenities: ["Air conditioning", "TV", "Terrace View", "Mini Bar", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-uYThZZmJFik?w=300&h=200&fit=crop&q=80"
+        image: "images/popular/popular_pamukkale.png"
       },
       {
         type: "Thermal Suite",
@@ -1069,7 +1064,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "In-room Jacuzzi", "FREE Cancellation"],
         amenities: ["Air conditioning", "Sitting area", "TV", "Private Thermal Tub", "Terrace", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-p6p5-uR5N5U?w=300&h=200&fit=crop&q=80"
+        image: "images/popular/popular_pamukkale.png"
       }
     ]
   },
@@ -1087,11 +1082,11 @@ const hotelsArray = [
     highRate: 3800,
     checkIn: "After 14:00",
     checkOut: "Before 11:00",
-    image: "https://images.unsplash.com/photo-p6p5-uR5N5U?w=600&h=400&fit=crop&q=80",
+    image: "images/deals/thermal_spa.png",
     images: [
-      "https://images.unsplash.com/photo-p6p5-uR5N5U?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-uYThZZmJFik?w=900&h=500&fit=crop&q=80",
-      "https://images.unsplash.com/photo-r86NLYwkhBM?w=900&h=500&fit=crop&q=80"
+      "images/deals/thermal_spa.png",
+      "images/popular/popular_pamukkale.png",
+      "images/deals/thermal_spa.png"
     ],
     amenities: ["Free WiFi", "Thermal Pool", "Restaurant", "Bar", "Parking", "Massage"],
     policies: {
@@ -1107,7 +1102,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Room Only", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-r86NLYwkhBM?w=300&h=200&fit=crop&q=80"
+        image: "images/deals/thermal_spa.png"
       },
       {
         type: "Standard Room",
@@ -1116,7 +1111,7 @@ const hotelsArray = [
         guests: 2,
         conditions: ["Breakfast included", "Book Now, Pay Later", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Garden View", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-uYThZZmJFik?w=300&h=200&fit=crop&q=80"
+        image: "images/deals/thermal_spa.png"
       },
       {
         type: "Family Room",
@@ -1125,7 +1120,7 @@ const hotelsArray = [
         guests: 4,
         conditions: ["Breakfast included", "FREE Cancellation"],
         amenities: ["Air conditioning", "TV", "Garden View", "Sofa Bed", "Wireless Internet"],
-        image: "https://images.unsplash.com/photo-p6p5-uR5N5U?w=300&h=200&fit=crop&q=80"
+        image: "images/deals/thermal_spa.png"
       }
     ]
   }
@@ -1138,39 +1133,39 @@ const hotelsArray = [
 const dealsArray = [
   {
     id: 1,
-    title: "Early Bird Special – 30% Off",
-    details: "Book your stay at least 60 days in advance and save up to 30% on your total reservation. Valid for stays between May 1 – October 31, 2026. Terms apply.",
-    imageUrl: "https://images.unsplash.com/photo-eZgeylk2mBw?w=400&h=280&fit=crop&q=80"
+    title: "Aegean Early Booking – 40% Off",
+    details: "Plan your summer getaway to Bodrum or Marmaris now! Book 90 days in advance to save up to 40% on beachfront resorts. Valid for stays between June and September.",
+    imageUrl: "images/deals/aegean_resort.png"
   },
   {
     id: 2,
-    title: "Weekend Getaway Package",
-    details: "Enjoy special Friday–Sunday rates with complimentary breakfast included. Stay 2 nights, get a 20% discount on your third night. Available at selected properties.",
-    imageUrl: "https://images.unsplash.com/photo-MdshtB1VOj8?w=400&h=280&fit=crop&q=80"
+    title: "Cappadocia Balloon & Cave Stay",
+    details: "Experience the magic of fairy chimneys. This package includes a 2-night stay in an authentic cave suite, daily local breakfast, and a discounted sunrise hot air balloon flight.",
+    imageUrl: "images/deals/cappadocia_balloons.png"
   },
   {
     id: 3,
-    title: "Family Holiday Bundle",
-    details: "Children under 12 stay free when sharing a room with parents. Includes complimentary kids club access, family breakfast buffet, and one free dinner per stay.",
-    imageUrl: "https://images.unsplash.com/photo-cxPsNriIaDM?w=400&h=280&fit=crop&q=80"
+    title: "Antalya All-Inclusive Family Deal",
+    details: "Perfect for families! Children under 12 stay free at participating Antalya mega-resorts. Includes unlimited aquapark access, kids club, and full-board dining.",
+    imageUrl: "images/deals/antalya_resort.png"
   },
   {
     id: 4,
-    title: "Earn 3K Bonus Points Per Night",
-    details: "For a limited time, earn up to 3000 Bonus Points on each qualifying stay between March 15, 2026 and May 15, 2026, at participating hotels. Terms apply.",
-    imageUrl: "https://images.unsplash.com/photo-ewaufEl_BD0?w=400&h=280&fit=crop&q=80"
+    title: "Istanbul Bosphorus Weekend",
+    details: "Enjoy a romantic Friday–Sunday stay at premium Istanbul hotels. Includes a complimentary Bosphorus dinner cruise, late checkout, and traditional Turkish breakfast.",
+    imageUrl: "images/deals/istanbul_bosphorus.png"
   },
   {
     id: 5,
-    title: "Last Minute Deals – Up to 40% Off",
-    details: "Grab incredible savings on rooms available within the next 7 days. Prices drop as availability decreases. Book now before rooms are gone!",
-    imageUrl: "https://images.unsplash.com/photo-8D9_vzCqDlY?w=400&h=280&fit=crop&q=80"
+    title: "Thermal Spa & Wellness Retreat",
+    details: "Rejuvenate at top-rated thermal hotels in Afyon or Bursa. Includes free access to thermal pools, a 30-minute traditional Hammam treatment, and half-board meals.",
+    imageUrl: "images/deals/thermal_spa.png"
   },
   {
     id: 6,
-    title: "Honeymoon Escape Package",
-    details: "Celebrate your love with our exclusive honeymoon package. Includes champagne on arrival, couples spa treatment, candlelit dinner, and late checkout. Contact us for details.",
-    imageUrl: "https://images.unsplash.com/photo-uYThZZmJFik?w=400&h=280&fit=crop&q=80"
+    title: "Ski Season Last Minute: Uludağ",
+    details: "Hit the slopes before the snow melts! Grab up to 25% off on last-minute ski resort bookings in Uludağ. Includes daily ski pass and gear rental discounts.",
+    imageUrl: "images/deals/uludag_ski.png"
   }
 ];
 
@@ -1184,9 +1179,9 @@ const popularSearchesArray = [
     title: "Antalya",
     numHotels: 8280,
     avgPrice: 5454,
-    minPrice: 1200,
+    minPrice: 1900,
     maxPrice: 22000,
-    imageUrl: "https://images.unsplash.com/photo-eZgeylk2mBw?w=400&h=280&fit=crop&q=80"
+    imageUrl: "images/popular/popular_antalya.png"
   },
   {
     id: 2,
@@ -1195,7 +1190,7 @@ const popularSearchesArray = [
     avgPrice: 7200,
     minPrice: 1800,
     maxPrice: 35000,
-    imageUrl: "https://images.unsplash.com/photo-NGJyOFKyGpw?w=400&h=280&fit=crop&q=80"
+    imageUrl: "images/popular/popular_istanbul.png"
   },
   {
     id: 3,
@@ -1204,7 +1199,7 @@ const popularSearchesArray = [
     avgPrice: 6800,
     minPrice: 3100,
     maxPrice: 21000,
-    imageUrl: "https://images.unsplash.com/photo-ewaufEl_BD0?w=400&h=280&fit=crop&q=80"
+    imageUrl: "images/popular/popular_cappadocia.png"
   },
   {
     id: 4,
@@ -1213,7 +1208,7 @@ const popularSearchesArray = [
     avgPrice: 8100,
     minPrice: 1200,
     maxPrice: 22000,
-    imageUrl: "https://images.unsplash.com/photo-8D9_vzCqDlY?w=400&h=280&fit=crop&q=80"
+    imageUrl: "images/popular/popular_bodrum.png"
   },
   {
     id: 5,
@@ -1222,7 +1217,7 @@ const popularSearchesArray = [
     avgPrice: 4900,
     minPrice: 2400,
     maxPrice: 11000,
-    imageUrl: "https://images.unsplash.com/photo-8GskgAIoenI?w=400&h=280&fit=crop&q=80"
+    imageUrl: "images/popular/popular_izmir.png"
   },
   {
     id: 6,
@@ -1231,6 +1226,6 @@ const popularSearchesArray = [
     avgPrice: 3800,
     minPrice: 1400,
     maxPrice: 6500,
-    imageUrl: "https://images.unsplash.com/photo-uYThZZmJFik?w=400&h=280&fit=crop&q=80"
+    imageUrl: "images/popular/popular_pamukkale.png"
   }
 ];

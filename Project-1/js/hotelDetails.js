@@ -74,7 +74,7 @@ function renderInfo() {
 
   document.getElementById('hotelAmenities').innerHTML =
     currentHotel.amenities.map(function (a) {
-      return `<span class="amenity-tag"><i class="bi bi-check-circle-fill" style="color:#38a169"></i>${a}</span>`;
+      return `<span class="amenity-tag"><i class="bi bi-check-circle-fill check-icon"></i>${a}</span>`;
     }).join('');
 
   document.getElementById('policyCheckIn').textContent   = currentHotel.checkIn;
