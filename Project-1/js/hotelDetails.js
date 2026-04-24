@@ -25,6 +25,7 @@ function loadHotelFromSession() {
   currentHotel  = booking.hotel;
 
   renderHeader();
+  setupDatePickers();
   renderPhotosCarousel();
   renderInfo();
 }
@@ -90,6 +91,50 @@ function showRoomSelection() {
   section.classList.remove('d-none');
   renderRooms();
   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function setupDatePickers() {
+  const checkInEl = document.getElementById('detailCheckIn');
+  const checkOutEl = document.getElementById('detailCheckOut');
+  
+  const bookingStr = sessionStorage.getItem('currentBooking');
+  let checkInVal = '';
+  let checkOutVal = '';
+  
+  if (bookingStr) {
+    const booking = JSON.parse(bookingStr);
+    if (booking.searchData) {
+      checkInVal = booking.searchData.checkIn || '';
+      checkOutVal = booking.searchData.checkOut || '';
+    }
+  }
+  
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
+  const dayAfter = new Date(today);
+  dayAfter.setDate(today.getDate() + 2);
+
+  checkInEl.min = formatDateObj(today);
+  checkOutEl.min = formatDateObj(tomorrow);
+  
+  checkInEl.value = checkInVal || formatDateObj(tomorrow);
+  checkOutEl.value = checkOutVal || formatDateObj(dayAfter);
+  
+  checkInEl.addEventListener('change', function() {
+    if (checkInEl.value && checkOutEl.value && checkInEl.value >= checkOutEl.value) {
+      const newOut = new Date(checkInEl.value);
+      newOut.setDate(newOut.getDate() + 1);
+      checkOutEl.value = formatDateObj(newOut);
+    }
+  });
+}
+
+function formatDateObj(dateObj) {
+  const y = dateObj.getFullYear();
+  const m = String(dateObj.getMonth() + 1).padStart(2, '0');
+  const d = String(dateObj.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
 }
 
 // ---- Render rooms ----
@@ -177,9 +222,27 @@ function handleBookRoom(btn) {
     sel.focus();
     return;
   }
+  
+  const checkInEl = document.getElementById('detailCheckIn');
+  const checkOutEl = document.getElementById('detailCheckOut');
+  
+  if (!checkInEl.value || !checkOutEl.value) {
+    alert('Please select check-in and check-out dates.');
+    checkInEl.focus();
+    return;
+  }
+  if (checkOutEl.value <= checkInEl.value) {
+    alert('Check-out date must be after check-in date.');
+    checkOutEl.focus();
+    return;
+  }
 
   const room    = currentHotel.rooms[idx];
   const booking = JSON.parse(sessionStorage.getItem('currentBooking'));
+
+  if (!booking.searchData) booking.searchData = {};
+  booking.searchData.checkIn = checkInEl.value;
+  booking.searchData.checkOut = checkOutEl.value;
 
   // Update (do NOT replace) the existing booking object
   booking.roomData = {

@@ -28,7 +28,7 @@
 
     <!-- Breadcrumb -->
     <nav class="app-breadcrumb">
-      <a href="index.html"><i class="bi bi-house-door-fill me-1"></i>Home</a>
+      <a href="index.html" onclick="sessionStorage.removeItem('searchData');"><i class="bi bi-house-door-fill me-1"></i>Home</a>
       <span class="sep"><i class="bi bi-chevron-right"></i></span>
       <a href="searchResults.html">Search Results</a>
       <span class="sep"><i class="bi bi-chevron-right"></i></span>
@@ -45,7 +45,7 @@
       <h2>Booking Confirmed!</h2>
       <p class="success-subtitle">Thank you for booking with HotelFinder. Your reservation is complete.</p>
       <div class="success-details" id="successDetails"></div>
-      <a href="index.html" class="btn-back-home">Return to Home</a>
+      <a href="index.html" class="btn-back-home" onclick="sessionStorage.removeItem('searchData');">Return to Home</a>
     </div>
 
     <!-- Two-column layout: form + sidebar -->

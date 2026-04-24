@@ -59,9 +59,10 @@ function loadReservationSummary() {
 }
 
 function calcNights(checkIn, checkOut) {
-  if (!checkIn || !checkOut) return 0;
+  if (!checkIn || !checkOut || checkIn === '–' || checkOut === '–') return 0;
   const msPerDay = 1000 * 60 * 60 * 24;
   const diff = new Date(checkOut) - new Date(checkIn);
+  if (isNaN(diff)) return 0;
   return Math.max(0, Math.round(diff / msPerDay));
 }
 
@@ -207,11 +208,11 @@ function validateForm() {
   const phoneClean = phone.value.replace(/[\s\-]/g, '');
   if (!phoneClean || phoneClean.length < 7 || phoneClean.length > 12) {
     setInvalid(phone, true);
-    document.getElementById('phoneFeedback').style.display = 'block';
+    document.getElementById('phoneFeedback').classList.add('d-block');
     isValid = false;
   } else {
     setInvalid(phone, false);
-    document.getElementById('phoneFeedback').style.display = 'none';
+    document.getElementById('phoneFeedback').classList.remove('d-block');
   }
 
   // Clarification checkbox
@@ -236,11 +237,11 @@ function validateForm() {
   const cardHolder = document.getElementById('cardHolder');
   if (!cardHolder.value.trim()) {
     setInvalid(cardHolder, true);
-    document.getElementById('cardHolderFeedback').style.display = 'block';
+    document.getElementById('cardHolderFeedback').classList.add('d-block');
     isValid = false;
   } else {
     setInvalid(cardHolder, false);
-    document.getElementById('cardHolderFeedback').style.display = 'none';
+    document.getElementById('cardHolderFeedback').classList.remove('d-block');
   }
 
   // Card number – must be 16 digits
@@ -248,11 +249,11 @@ function validateForm() {
   const cardDigits = cardNumber.value.replace(/\s/g, '');
   if (cardDigits.length !== 16 || !/^\d+$/.test(cardDigits)) {
     setInvalid(cardNumber, true);
-    document.getElementById('cardNumberFeedback').style.display = 'block';
+    document.getElementById('cardNumberFeedback').classList.add('d-block');
     isValid = false;
   } else {
     setInvalid(cardNumber, false);
-    document.getElementById('cardNumberFeedback').style.display = 'none';
+    document.getElementById('cardNumberFeedback').classList.remove('d-block');
   }
 
   // Expiry date – MM/YY format
@@ -260,22 +261,22 @@ function validateForm() {
   const expiryPattern = /^(0[1-9]|1[0-2])\/\d{2}$/;
   if (!expiryPattern.test(expiryDate.value.trim())) {
     setInvalid(expiryDate, true);
-    document.getElementById('expiryFeedback').style.display = 'block';
+    document.getElementById('expiryFeedback').classList.add('d-block');
     isValid = false;
   } else {
     setInvalid(expiryDate, false);
-    document.getElementById('expiryFeedback').style.display = 'none';
+    document.getElementById('expiryFeedback').classList.remove('d-block');
   }
 
   // CVV – 3 or 4 digits
   const cvv = document.getElementById('cvv');
   if (!/^\d{3,4}$/.test(cvv.value.trim())) {
     setInvalid(cvv, true);
-    document.getElementById('cvvFeedback').style.display = 'block';
+    document.getElementById('cvvFeedback').classList.add('d-block');
     isValid = false;
   } else {
     setInvalid(cvv, false);
-    document.getElementById('cvvFeedback').style.display = 'none';
+    document.getElementById('cvvFeedback').classList.remove('d-block');
   }
 
   // Agreement checkbox
